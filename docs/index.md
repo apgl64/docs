@@ -6,14 +6,11 @@ Bienvenue sur le centre de connaissances du <strong>Service du Numérique</stron
 
 ## 📚 Accès direct aux documentations
 
-<div class="grid cards" markdown>
-
--   :material-book-open-page-variant:{ .lg .middle } **Guide Utilisateur TYPO3**
-
-    ---
-
-    Manuel d'utilisation et de gestion des contenus sous le CMS TYPO3 (arborescence, médias, création de pages et publication).
-
-    [:octicons-arrow-right-24: Accéder au guide](Guide%20utilisateur%20TYPO3/index.md)
-
-</div>
+<a href="Guide%20utilisateur%20TYPO3/index.md" class="doc-card">
+  <img src="assets/images/typo3-cover.svg" alt="Miniature Guide Utilisateur TYPO3" class="doc-card-thumb" />
+  <div class="doc-card-content">
+    <div class="doc-card-title">Guide Utilisateur TYPO3</div>
+    <div class="doc-card-desc">Manuel d'utilisation et de gestion des contenus sous le CMS TYPO3 (arborescence, médias, création de pages et publication).</div>
+    <div class="doc-card-btn">Accéder au guide &rarr;</div>
+  </div>
+</a>

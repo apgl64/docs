@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" width="120" height="140">
+  <!-- Fond Couverture Document -->
+  <rect x="5" y="5" width="110" height="130" rx="8" fill="#FFFFFF" stroke="#E30613" stroke-width="2.5" />
+  <!-- Bandeau supérieur rouge -->
+  <path d="M 5 13 C 5 8.5, 8.5 5, 13 5 L 107 5 C 111.5 5, 115 8.5, 115 13 L 115 45 L 5 45 Z" fill="#E30613" />
+  <!-- Titre / Marque sur la couverture -->
+  <text x="60" y="30" font-family="Roboto, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">TYPO3</text>
+  <!-- Lignes de document stylisées -->
+  <rect x="20" y="60" width="80" height="6" rx="3" fill="#E30613" opacity="0.85" />
+  <rect x="20" y="74" width="65" height="5" rx="2.5" fill="#CBD5E0" />
+  <rect x="20" y="86" width="75" height="5" rx="2.5" fill="#CBD5E0" />
+  <rect x="20" y="98" width="50" height="5" rx="2.5" fill="#CBD5E0" />
+  <!-- Badge CMS -->
+  <circle cx="95" cy="115" r="12" fill="#E30613" />
+  <path d="M 91 115 L 94 118 L 100 112" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

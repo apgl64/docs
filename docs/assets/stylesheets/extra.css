@@ -6,7 +6,7 @@
 :root {
   --md-primary-fg-color:        #E30613;
   --md-primary-fg-color--light: #F83843;
-  --md-primary-fg-color--dark:  #B0000A;
+  --md-primary-fg-color--dark:  #900008;
   --md-primary-bg-color:        #FFFFFF;
   --md-accent-fg-color:         #E30613;
   --md-accent-bg-color:         #FDF2F2;
@@ -57,15 +57,99 @@
   margin-top: 2px;
 }
 
-/* Style de la bannière sobre d'accueil */
+/* Barre des onglets de navigation : Rouge foncé avec onglets bien visibles */
+.md-tabs {
+  background-color: #900008 !important;
+}
+
+.md-tabs__link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600 !important;
+  font-size: 0.88rem !important;
+  opacity: 0.9 !important;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+/* Message de bienvenue d'accueil : Fond gris clair (light grey) & texte plus petit */
 .portal-welcome {
-  padding: 1.4rem;
-  background: linear-gradient(135deg, #FFF5F5 0%, #FFFFFF 100%);
+  padding: 1.1rem 1.4rem;
+  background-color: #F8F9FA !important;
   border-left: 4px solid #E30613;
   border-radius: 6px;
   margin-bottom: 2rem;
-  font-size: 1.05rem;
-  color: #2D3748;
+  font-size: 0.95rem;
+  color: #4A5568;
+  line-height: 1.55;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* Bloc d'accès direct aux documentations (Card avec miniature) */
+.doc-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 1.4rem;
+  background: linear-gradient(135deg, #FFF5F5 0%, #FFFFFF 100%);
+  border: 1px solid #FEB2B2;
+  border-left: 5px solid #E30613;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(227, 6, 19, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 1.5rem;
+  text-decoration: none !important;
+}
+
+.doc-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(227, 6, 19, 0.15);
+}
+
+.doc-card-thumb {
+  width: 85px;
+  height: 98px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.doc-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.doc-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1A202C;
+  margin-bottom: 0.4rem;
+}
+
+.doc-card-desc {
+  font-size: 0.9rem;
+  color: #4A5568;
+  margin-bottom: 0.8rem;
+  line-height: 1.45;
+}
+
+.doc-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #E30613 !important;
+}
+
+.doc-card-btn:hover {
+  color: #900008 !important;
+  text-decoration: underline;
 }
 
 /* Card Auteur avec Avatar (Pour les fiches documentaires) */
@@ -162,7 +246,7 @@
 }
 
 .md-typeset a:hover {
-  color: #B0000A;
+  color: #900008;
 }
 
 /* Callouts & Admonitions */
