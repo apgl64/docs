@@ -1,5 +1,5 @@
 # Configuration MkDocs - Service du Numérique
-site_name: "Service du numérique : portail de documentation technique et guide utilisateur"
+site_name: '<div class="header-title-container"><span class="header-title-main">Service du Numérique</span><span class="header-title-sub">Portail de documentation technique et guide utilisateur</span></div>'
 site_description: Documentation technique et guides utilisateurs du Service du Numérique - Agence Publique de Gestion Locale
 site_author: Service du Numérique
 
@@ -35,10 +35,9 @@ extra_css:
 copyright: |
   <div class="footer-apgl">
     <img src="/assets/images/logo-agence.png" alt="Logo APGL64" class="footer-apgl-logo" />
-    <div class="footer-apgl-text">
-      <span class="footer-apgl-title">Agence Publique de Gestion Locale (APGL 64)</span>
-      <span class="footer-apgl-link"><a href="https://www.apgl64.fr" target="_blank" rel="noopener">www.apgl64.fr</a></span>
-    </div>
+    <span class="footer-apgl-text">
+      <a href="https://www.apgl64.fr" target="_blank" rel="noopener">Agence Publique de Gestion Locale (APGL 64)</a>
+    </span>
   </div>
 
 markdown_extensions:
