@@ -1,12 +1,13 @@
 # 📖 Guide Utilisateur TYPO3
 
-<!-- Cartouche Auteur obligatoire pour chaque fiche -->
+<!-- Label et Cartouche Auteur -->
+<div class="author-label">Publié par</div>
 <div class="author-card">
   <img src="../assets/images/default-avatar.svg" alt="Avatar Auteur" class="avatar" />
   <div class="author-details">
     <span class="author-name">Service du Numérique</span>
     <span class="author-role">Support &amp; Administration CMS TYPO3</span>
-    <span class="author-date">Dernière révision : Septembre 2026</span>
+    <span class="author-date">Mise à jour : Septembre 2026</span>
   </div>
 </div>
 

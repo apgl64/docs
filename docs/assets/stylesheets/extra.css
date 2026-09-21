@@ -57,99 +57,142 @@
   margin-top: 2px;
 }
 
-/* Barre des onglets de navigation : Rouge foncé avec onglets bien visibles */
+/* Barre des onglets de navigation : Rouge foncé avec séparateurs et marges équilibrées */
 .md-tabs {
   background-color: #900008 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.md-tabs__list {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-tabs__item {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Séparateur vertical entre les onglets */
+.md-tabs__item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 0 2px;
 }
 
 .md-tabs__link {
-  color: rgba(255, 255, 255, 0.9) !important;
+  padding: 10px 20px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
   font-weight: 600 !important;
   font-size: 0.88rem !important;
   opacity: 0.9 !important;
+  transition: all 0.15s ease !important;
 }
 
 .md-tabs__link--active,
 .md-tabs__link:hover {
   color: #FFFFFF !important;
   opacity: 1 !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-radius: 4px !important;
 }
 
-/* Message de bienvenue d'accueil : Fond gris clair (light grey) & texte plus petit */
+/* Message de bienvenue d'accueil : Fond gris clair (light grey) sans bordure gauche */
 .portal-welcome {
   padding: 1.1rem 1.4rem;
   background-color: #F8F9FA !important;
-  border-left: 4px solid #E30613;
+  border-left: none !important;
+  border: 1px solid #E2E8F0;
   border-radius: 6px;
   margin-bottom: 2rem;
   font-size: 0.95rem;
   color: #4A5568;
   line-height: 1.55;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
 }
 
-/* Bloc d'accès direct aux documentations (Card avec miniature) */
+/* Bloc d'accès direct aux documentations (Card unifiée sans découpage) */
 .doc-card {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  padding: 1.4rem;
-  background: linear-gradient(135deg, #FFF5F5 0%, #FFFFFF 100%);
-  border: 1px solid #FEB2B2;
-  border-left: 5px solid #E30613;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(227, 6, 19, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  margin-bottom: 1.5rem;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 22px !important;
+  padding: 1.4rem !important;
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  transition: all 0.2s ease-in-out !important;
+  margin-bottom: 1.5rem !important;
   text-decoration: none !important;
+  color: inherit !important;
 }
 
 .doc-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(227, 6, 19, 0.15);
+  transform: translateY(-2px) !important;
+  border-color: #FEB2B2 !important;
+  box-shadow: 0 6px 16px rgba(227, 6, 19, 0.12) !important;
 }
 
 .doc-card-thumb {
-  width: 85px;
-  height: 98px;
-  object-fit: contain;
-  flex-shrink: 0;
-  border-radius: 6px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  width: 80px !important;
+  height: 95px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+  border-radius: 5px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid #EDF2F7 !important;
+  padding: 4px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06) !important;
 }
 
 .doc-card-content {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-grow: 1 !important;
 }
 
 .doc-card-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #1A202C;
-  margin-bottom: 0.4rem;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: #1A202C !important;
+  margin-bottom: 0.4rem !important;
 }
 
 .doc-card-desc {
-  font-size: 0.9rem;
-  color: #4A5568;
-  margin-bottom: 0.8rem;
-  line-height: 1.45;
+  font-size: 0.9rem !important;
+  color: #4A5568 !important;
+  margin-bottom: 0.6rem !important;
+  line-height: 1.45 !important;
 }
 
 .doc-card-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.88rem;
-  font-weight: 600;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
   color: #E30613 !important;
 }
 
-.doc-card-btn:hover {
-  color: #900008 !important;
-  text-decoration: underline;
+/* Masquer le cartouche et le label Auteur de la barre latérale / Menu de gauche */
+.md-sidebar .author-card,
+.md-nav .author-card,
+.md-sidebar .author-label,
+.md-nav .author-label {
+  display: none !important;
+}
+
+/* Label "Publié par" au-dessus du cartouche auteur dans le corps de page */
+.author-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #E30613;
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
 }
 
 /* Card Auteur avec Avatar (Pour les fiches documentaires) */
@@ -158,7 +201,7 @@
   align-items: center;
   gap: 14px;
   padding: 10px 18px;
-  margin: 1.2rem 0;
+  margin: 0.2rem 0 1.2rem 0;
   background-color: #FFF5F5;
   border: 1px solid #FEB2B2;
   border-left: 4px solid #E30613;
