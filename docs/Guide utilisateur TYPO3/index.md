@@ -1,15 +1,5 @@
 # 📖 Guide Utilisateur TYPO3
 
-<!-- Card Auteur avec Avatar -->
-<div class="author-card">
-  <img src="../assets/images/default-avatar.svg" alt="Avatar Auteur" class="avatar" />
-  <div class="author-details">
-    <span class="author-name">Service du Numérique</span>
-    <span class="author-role">Support &amp; Administration CMS TYPO3</span>
-    <span class="author-date">Dernière révision : Septembre 2026</span>
-  </div>
-</div>
-
 Ce guide récapitule les étapes de prise en main, d'édition et de publication de contenus sur le CMS **TYPO3**.
 
 ---
@@ -38,20 +28,22 @@ Pour accéder à l'interface d'administration back-office TYPO3 :
 
 Dans le menu de gauche **Page**, vous pouvez naviguer dans l'arborescence du site :
 - **Créer une page** : Clic droit sur la page parente ➔ *Nouveau*.
-- **Masquer / Afficher** : Activer ou désactiver l'œil d'état de la page.
+- **Masquer/Publier** : Utilisez l’icône d’œil pour passer la page en ligne ou hors ligne.
+- **Réordonner** : Glissez-déposez les éléments directement dans l'arborescence.
 
 ---
 
 ## 3. Édition des Contenus & Médias
 
-Les contenus sont organisés par colonnes (Zone principale, Barre latérale, Pied de page).
-
-### Images & Assets
-Les visuels associés à cette documentation sont stockés dans le sous-dossier [`assets/`](./assets/).
+Chaque page est composée de blocs de contenus (Éléments de contenu) :
+- **Texte & Images** : Mise en forme du texte via l’éditeur rich-text (RTE) et insertion d’images.
+- **Formulaires & Cartes** : Blocs applicatifs pré-configurés pour vos formulaires de contact.
 
 ---
 
 ## 4. Publication & Bonnes Pratiques
 
-- Toujours prévisualiser la page avant la publication définitive.
-- Renseigner les balises SEO (Titre de page, description meta, texte alternatif des images).
+Avant toute publication :
+1. Prévisualisez le rendu sur ordinateur et mobile (*Visualisation mobile*).
+2. Vérifiez l’accessibilité des images (remplissez systématiquement la balise alternative `alt`).
+3. Videz le cache de la page via le menu éclair en haut à droite.

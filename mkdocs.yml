@@ -21,7 +21,9 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - navigation.top
+    - toc.integrate
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -60,3 +62,6 @@ markdown_extensions:
 nav:
   - Accueil: index.md
   - Guide Utilisateur TYPO3: Guide utilisateur TYPO3/index.md
+  - Guide Nextcloud: Guide utilisateur Nextcloud/index.md
+  - VPN & Accès Distant: Procedure Acces Distant VPN/index.md
+  - Téléphonie IP 3CX: Manuel Telephonie IP/index.md
