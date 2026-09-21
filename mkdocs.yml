@@ -1,0 +1,50 @@
+# Configuration MkDocs - Service du Numérique
+site_name: Service du Numérique
+site_description: Documentation technique et guides utilisateurs du Service du Numérique - Agence Publique de Gestion Locale
+site_author: Service du Numérique
+
+# Dossier des documentations Markdown
+docs_dir: docs
+
+theme:
+  name: material
+  language: fr
+  logo: assets/images/logo-service.png
+  favicon: assets/images/logo-service.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    primary: custom
+    accent: red
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Accueil: index.md
+  - Guide Utilisateur TYPO3: Guide utilisateur TYPO3/index.md

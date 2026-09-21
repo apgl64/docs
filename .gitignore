@@ -1,0 +1,21 @@
+# Temporary files created by Microsoft Word
+~$*.docx
+~$*.doc
+~$*.xlsx
+~$*.pptx
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+.DS_Store?
+._*
+
+# Editor / IDE settings
+.vscode/
+.idea/
+
+# MkDocs build directory
+site/
+.venv/
+__pycache__/
