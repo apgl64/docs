@@ -88,6 +88,29 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
+.doc-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.doc-cards-grid .doc-card {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .doc-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .doc-cards-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 /* Bloc d'accès direct aux documentations (Card avec miniature) */
 .doc-card {
   display: flex;
