@@ -3,7 +3,7 @@
     Script de conversion de documents Word (.docx) vers Markdown (.md) pour le portail Docs (compatible MkDocs & GitHub).
 .DESCRIPTION
     Ce script prend un fichier Word (.docx), crée un sous-dossier dédié dans `docs/<NomDoc>/`,
-    extrait automatiquement les images dans `assets/`, ajoute l'étiquette 'Publié par' et le cartouche auteur avec avatar,
+    extrait automatiquement les images dans `assets/`, ajoute le cartouche auteur avec avatar,
     et génère les fichiers `index.md` (MkDocs) et `README.md` (GitHub).
 .EXAMPLE
     .\convert-doc.ps1 -DocxPath "import\Guide TYPO3.docx"
@@ -137,8 +137,7 @@ if ($Process.ExitCode -eq 0) {
 
         # Génération du cartouche Auteur
         $HeaderHTML = @"
-<!-- Label et Cartouche Auteur -->
-<div class="author-label">Publié par</div>
+<!-- Cartouche Auteur obligatoire pour chaque fiche -->
 <div class="author-card">
   <img src="../assets/images/default-avatar.svg" alt="Avatar Auteur" class="avatar" />
   <div class="author-details">
