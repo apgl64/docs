@@ -1,7 +1,7 @@
 # Configuration MkDocs - Service du Numérique
-site_name: '<div class="header-title-container"><span class="header-title-main">Service du Numérique</span><span class="header-title-sub">Portail de documentation technique et guide utilisateur</span></div>'
-site_description: Documentation technique et guides utilisateurs du Service du Numérique - Agence Publique de Gestion Locale
-site_author: Service du Numérique
+site_name: "Service du Numérique"
+site_description: "Portail de documentation technique et guide utilisateur - Agence Publique de Gestion Locale"
+site_author: "Service du Numérique"
 
 # Dossier des documentations Markdown
 docs_dir: docs

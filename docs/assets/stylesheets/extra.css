@@ -12,7 +12,7 @@
   --md-accent-bg-color:         #FDF2F2;
 }
 
-/* En-tête : Hauteur agrandie & Alignement */
+/* En-tête : Hauteur & Alignment */
 .md-header {
   background-color: #E30613 !important;
   min-height: 76px !important;
@@ -21,6 +21,7 @@
 .md-header__inner {
   padding-top: 8px !important;
   padding-bottom: 8px !important;
+  align-items: center !important;
 }
 
 /* Logo du Service agrandi avec contour blanc brillant */
@@ -34,26 +35,22 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
 }
 
-/* Hiérarchie Titre / Sous-titre du Service */
-.header-title-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 1.25;
-}
-
-.header-title-main {
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: #FFFFFF;
+/* Titre principal et sous-titre dans le bandeau supérieur */
+.md-header__title .md-header__topic:first-child {
+  font-size: 1.3rem !important;
+  font-weight: 800 !important;
+  color: #FFFFFF !important;
+  line-height: 1.15 !important;
   letter-spacing: -0.01em;
 }
 
-.header-title-sub {
-  font-size: 0.8rem;
+.md-header__title .md-header__topic:first-child::after {
+  content: "Portail de documentation technique et guide utilisateur";
+  display: block;
+  font-size: 0.78rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.88);
-  margin-top: 1px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 2px;
 }
 
 /* Style de la bannière sobre d'accueil */
@@ -122,20 +119,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 0.6rem 0;
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.75);
+  gap: 14px;
+  padding: 0.8rem 0;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
+/* Logo Agence ré-agrandi légèrement (34px) avec fond transparent */
 .footer-apgl-logo {
-  height: 24px !important;
+  height: 34px !important;
   width: auto !important;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .footer-apgl-text {
@@ -143,7 +141,7 @@
 }
 
 .footer-apgl-text a {
-  color: rgba(255, 255, 255, 0.88) !important;
+  color: rgba(255, 255, 255, 0.92) !important;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.15s ease;
