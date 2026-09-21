@@ -1,15 +1,6 @@
-<!-- Badge discret de l'Agence -->
-<div class="agence-badge">
-  <img src="../assets/images/logo-agence.png" alt="Agence Publique de Gestion Locale" />
-  <div class="agence-badge-text">
-    <span class="agence-badge-title">Agence Publique de Gestion Locale</span>
-    <span class="agence-badge-subtitle">Service du Numérique</span>
-  </div>
-</div>
-
 # 📖 Guide Utilisateur TYPO3
 
-<!-- Card Auteur / Rédacteur -->
+<!-- Cartouche Auteur obligatoire pour chaque fiche -->
 <div class="author-card">
   <img src="../assets/images/default-avatar.svg" alt="Avatar Auteur" class="avatar" />
   <div class="author-details">
@@ -64,7 +55,3 @@ Les visuels associés à cette documentation sont stockés dans le sous-dossier 
 
 - Toujours prévisualiser la page avant la publication définitive.
 - Renseigner les balises SEO (Titre de page, description meta, texte alternatif des images).
-
----
-
-*Guide publié par le Service du Numérique - Agence Publique de Gestion Locale.*
