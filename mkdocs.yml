@@ -8,6 +8,7 @@ docs_dir: docs
 
 theme:
   name: material
+  custom_dir: overrides
   language: fr
   logo: assets/images/logo-service.png
   favicon: assets/images/logo-service.png

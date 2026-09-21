@@ -12,7 +12,7 @@
   --md-accent-bg-color:         #FDF2F2;
 }
 
-/* En-tête : Hauteur & Alignment */
+/* En-tête : Hauteur & Alignement */
 .md-header {
   background-color: #E30613 !important;
   min-height: 76px !important;
@@ -35,19 +35,23 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
 }
 
-/* Titre principal et sous-titre dans le bandeau supérieur */
-.md-header__title .md-header__topic:first-child {
-  font-size: 1.3rem !important;
-  font-weight: 800 !important;
-  color: #FFFFFF !important;
-  line-height: 1.15 !important;
+/* Titre principal et sous-titre en HTML natif dans le bandeau supérieur */
+.header-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.header-title-main {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #FFFFFF;
   letter-spacing: -0.01em;
 }
 
-.md-header__title .md-header__topic:first-child::after {
-  content: "Portail de documentation technique et guide utilisateur";
-  display: block;
-  font-size: 0.78rem;
+.header-title-sub {
+  font-size: 0.82rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
   margin-top: 2px;
@@ -125,7 +129,7 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Logo Agence ré-agrandi légèrement (34px) avec fond transparent */
+/* Logo Agence ré-agrandi (34px) avec fond transparent */
 .footer-apgl-logo {
   height: 34px !important;
   width: auto !important;
